@@ -1,3 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Montreal";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./fonts/montreal.woff2") format("woff2");
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative top-20 opacity-30 text-white text-xl active:opacity-100 font-bold hover:opacity-100 duration-150 ease-out;
+  }
+
+  .col-item {
+    @apply relative flex-1 w-full bg-gray-700 overflow-hidden;
+  }
+
+  .top-100 {
+    @apply top-full;
+  }
+}
+
+.nav-item a#active {
+  opacity: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #141414;
+  font-family: "Montreal";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-item {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.title {
+  flex: 2;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.title p {
+  position: relative;
+  top: 80px;
+}
+
+.preview {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.numbers {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  text-align: center;
+  color: #fff;
+  margin: 3em 0;
+}
+
+.numbers span {
+  position: relative;
+  top: 30px;
+}
+
+.icon1,
+.icon2 {
+  flex: 0.5;
+  font-variant: 30px;
+  padding: 0 5em;
+}
+
+.hero {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
