@@ -4,16 +4,35 @@ import Content from "./Content";
 // GSAP
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import Intro from "./Intro";
 
 function App() {
   useGSAP(() => {
     let tl = gsap.timeline({ delay: 0 });
-    tl.to(".col", {
-      top: 0,
-      duration: 3,
+
+    tl.to(".loader", {
+      opacity: 1,
       ease: "power4.inOut",
+      duration: 6,
     });
+    tl.to(
+      ".loader",
+      {
+        opacity: 0,
+        duration: 1,
+      },
+      "-=0.5"
+    );
+
+    tl.to(
+      ".col",
+      {
+        top: 0,
+        duration: 3,
+        ease: "power4.inOut",
+      },
+      "-=2.5"
+    );
 
     tl.to(
       ".c-1 .item",
@@ -90,6 +109,7 @@ function App() {
       },
       "-=2"
     );
+
     tl.to(
       ".icon1 span",
       {
@@ -103,6 +123,7 @@ function App() {
 
   return (
     <>
+      <Intro />
       <Container />
       <Content />
     </>

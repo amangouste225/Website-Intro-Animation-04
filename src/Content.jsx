@@ -24,7 +24,7 @@ export default function Content() {
         <div className="icon icon2"></div>
       </main>
 
-      <Footer />
+      <Footer onClickBad />
     </div>
   );
 }
