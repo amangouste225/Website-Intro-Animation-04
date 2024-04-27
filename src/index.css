@@ -64,7 +64,7 @@ img {
 
 .title p {
   position: relative;
-  top: 80px;
+  top: 150px;
 }
 
 .preview {
@@ -86,8 +86,13 @@ img {
 .icon1,
 .icon2 {
   flex: 0.5;
-  font-variant: 30px;
+  font-size: 40px;
   padding: 0 5em;
+  font-weight: 200 !important;
+}
+
+.icon1 span {
+  font-weight: 100 !important;
 }
 
 .hero {
@@ -95,7 +100,7 @@ img {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  width: 95%;
+  width: 90%;
   display: flex;
   align-items: center;
   color: #fff;

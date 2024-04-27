@@ -4,7 +4,7 @@ import {
   imageOne,
   imageThree,
   imageTwo,
-} from "./components/constant";
+} from "./constant";
 
 export default function Container() {
   return (

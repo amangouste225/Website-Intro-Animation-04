@@ -17,8 +17,8 @@ export default function Content() {
       </nav>
 
       <main className="hero">
-        <div className="icon icon1"></div>
-        <div className="title text-5xl">
+        <div className="icon icon1 flex justify-end"></div>
+        <div className="title text-5xl font-bold">
           <p>The regeneration Site</p>
         </div>
         <div className="icon icon2"></div>

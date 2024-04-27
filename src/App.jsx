@@ -85,10 +85,19 @@ function App() {
       {
         top: 0,
         stagger: 0.075,
-        duration: 1,
+        duration: 2.5,
         ease: "power3.inOut",
       },
-      "-=1.5"
+      "-=2"
+    );
+    tl.to(
+      ".icon1 span",
+      {
+        scale: 1,
+        stagger: 0.5,
+        ease: "power3.inOut",
+      },
+      "-=1"
     );
   });
 
